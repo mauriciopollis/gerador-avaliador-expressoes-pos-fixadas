@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'avaliador_expressoes_pos_fixadas'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=avaliador_expressoes_pos_fixadas",
+                    "--package=avaliador_expressoes_pos_fixadas"
+                ],
+                "filter": {
+                    "name": "avaliador_expressoes_pos_fixadas",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'avaliador_expressoes_pos_fixadas'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=avaliador_expressoes_pos_fixadas",
+                    "--package=avaliador_expressoes_pos_fixadas"
+                ],
+                "filter": {
+                    "name": "avaliador_expressoes_pos_fixadas",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
